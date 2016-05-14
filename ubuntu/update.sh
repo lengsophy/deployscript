@@ -3,15 +3,12 @@ echo "KILL NODE"
 sudo killall node
 wait
 echo "DELTE BUNDLE"
-sudo rm -rf bundle.tgz
-wait
-echo "DELTE BUNDLE FOLDER"
-sudo rm -rf bundle
+sudo rm bundle bundle.tgz -rf
 wait
 git pull
 wait
 echo "ZIPPING..."
-sudo meteor bundle --debug bundle.tgz 
+sudo meteor bundle bundle.tgz 
 wait
 echo "UNZIPPING"
 sudo tar -zxvf bundle.tgz
