@@ -4,6 +4,8 @@ sudo yum install epel-release
 wait
 sudo yum install nodejs
 wait
+sudo npm install pm2 -g
+wait
 curl https://install.meteor.com/ | sh
 wait
 sudo cp mongodb.repo  /etc/yum.repos.d/
