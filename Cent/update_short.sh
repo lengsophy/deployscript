@@ -22,5 +22,5 @@ sudo chown -R apache:apache bundle
 wait
 sudo rm -r -f bundle.tgz
 cd bundle
-PORT=80 MONGO_URL=mongodb://localhost:27017/meteor ROOT_URL=$1 nohup node main.js &
 #PORT=80 MONGO_URL=mongodb://localhost:27017/meteor ROOT_URL=http://164.138.19.132 pm2 start --name "1000" main.js
+PORT=80 MONGO_URL=mongodb://localhost:27017/meteor ROOT_URL=$1 nohup node main.js &
