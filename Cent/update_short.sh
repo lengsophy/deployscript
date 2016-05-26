@@ -10,6 +10,8 @@ sudo tar -zxvf bundle.tgz
 wait
 sudo yum install nodejs npm
 wait
+#npm install pm2 -g
+#wait
 cd bundle/programs/server/
 sudo npm install
 wait
