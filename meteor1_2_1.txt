@@ -8,3 +8,7 @@
      sudo ./mrt.sh 
      sudo mv /root/.meteor-install-tmp/ /root/.meteor
      sudo rm -rf mrt.sh 
+
+
+     When Hostkey authonication fail
+     sudo rm -rf /root/.ssh/known_hosts
