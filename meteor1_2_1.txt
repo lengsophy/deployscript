@@ -1,0 +1,10 @@
+     sudo rm -rf /root/.meteor-install-tmp/
+     sudo cp -R .meteor/ /root/
+     cd 
+     sudo mv .meteor/ .meteor-install-tmp
+     ls -a
+     ls -a .meteor-install-tmp/
+     cd mrt/
+     sudo ./mrt.sh 
+     sudo mv /root/.meteor-install-tmp/ /root/.meteor
+     sudo rm -rf mrt.sh 
