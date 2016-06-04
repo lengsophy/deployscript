@@ -1,15 +1,12 @@
 #step 1
-
-sudo chmod u+x key_name.pem
-sudo ssh -i key_name.pem centos@IP_Server
+sudo ssh -i centos@IP_Server(accessing to the server)
 
 #step 2
-
-git clone https://github.com/lengsophy/configure.git
+git clone https://github.com/lengsophy/deployscript.git (already publice)
 
 #step 3
 
-cd configure/Cent/
+cd deployscript/Cent/
 cp * ../../
 cd ../
 cp mongodb.repo ../
@@ -36,4 +33,4 @@ or you want to update
 
 
 
-#sudo scp -r root@164.138.19.132:/var/www/html/test/db/configure/dump /home/noolab/Documents/configurServer
+#sudo scp -r root@IP:/var/www/html/test/db/configure/dump /home/noolab/Documents/configurServer
